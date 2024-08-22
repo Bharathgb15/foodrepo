@@ -10,4 +10,6 @@ public class FoodmoduleApplication {
 		SpringApplication.run(FoodmoduleApplication.class, args);
 	}
 
+	
+	
 }

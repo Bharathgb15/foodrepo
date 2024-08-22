@@ -1,0 +1,5 @@
+package com.food.foodmodule.service;
+
+public class MenuItemService {
+
+}

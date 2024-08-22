@@ -1,0 +1,11 @@
+package com.food.foodmodule.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+
+public class Food {
+ 
+	
+
+}

@@ -1,0 +1,5 @@
+package com.food.foodmodule.repositroy;
+
+public interface MenuItemRepository {
+
+}

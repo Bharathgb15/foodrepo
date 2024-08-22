@@ -1,0 +1,13 @@
+package com.food.foodmodule.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.food.foodmodule.service.MenuItemService;
+
+public class MenuItemController {
+
+	@Autowired
+    private MenuItemService service;
+
+	
+}

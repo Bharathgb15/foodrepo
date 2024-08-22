@@ -1,0 +1,38 @@
+package com.food.foodmodule.service;
+
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.food.foodmodule.entity.MenuItem;
+import com.food.foodmodule.repositroy.MenuItemRepository;
+
+@Service
+public class MenuItemService {
+
+	@Autowired
+    private MenuItemRepository repository;
+
+	public MenuItem addMenu(MenuItem menu) {
+        return repository.save(menu);
+    
+}
+
+	 public MenuItem getMenuById(int id)  {
+	        Optional<MenuItem> menu = repository.findById(id);
+	        return menu.orElse(null);
+	 }
+
+	public List<MenuItem> getMenus(String dishType) {
+		// TODO Auto-generated method stub
+		return ;
+	} 
+	
+	public List<Dish> getDishesByCategory(String category)  {
+		List<Dish> dishes = dishRepository.findByCategory(category);
+		
+	}
+}

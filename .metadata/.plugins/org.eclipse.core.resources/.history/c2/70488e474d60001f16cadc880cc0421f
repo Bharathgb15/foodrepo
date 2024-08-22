@@ -1,0 +1,28 @@
+package com.food.foodmodule.entity;
+
+
+
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+	public class MenuItem {
+
+	    @Id
+	    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	    private Integer dishId;
+
+	    @NotBlank(message = "Category must be given")
+	    private String dishType;
+
+	    @NotBlank(message = "Name must be given")
+	    private String dishName;
+
+	    @NotNull
+	    @Min(value = 0, message = "Price must be a positive integer")
+	    private Integer unitPrice;
+
+	    private String dishDesc;
+
+	   
+	}

@@ -8,6 +8,12 @@
 <workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1724252864675_5" label="customermodule" name="customermodule">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/customermodule" type="4"/>
 </workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1724693684734_6" label="EurekaServerApp" name="EurekaServerApp">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/EurekaServerApp" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1724693824343_7" label="ApiGatewayApp" name="ApiGatewayApp">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ApiGatewayApp" type="4"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1724240589884_2" label="Window Working Set" name="Aggregate for window 1724240589883"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1724252778950_4" label="Window Working Set" name="Aggregate for window 1724252778950"/>
 </workingSetManager>

@@ -16,12 +16,13 @@ import lombok.NoArgsConstructor;
 @Table(name = "menu_item")
 	public class MenuItem {
 
-	    @Id
+	
+		@Id
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	    private Integer dishId;
 	    private String dishType;
 	    private String dishName;
-	    private Integer unitPrice;
+	    private Integer price;
 	    private String dishDesc;
 
 	   

@@ -1,0 +1,651 @@
+2024-08-28T10:34:44.277+05:30 ERROR 2428 --- [foodmodule] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'menuItemController' defined in file [C:\Users\Admin\FOM-workspace\foodmodule\target\classes\com\food\foodmodule\controller\MenuItemController.class]: Failed to instantiate [com.food.foodmodule.controller.MenuItemController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.3.jar:3.3.3]
+	at com.food.foodmodule.FoodmoduleApplication.main(FoodmoduleApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.3.jar:3.3.3]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.food.foodmodule.controller.MenuItemController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:94) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1331) ~[spring-beans-6.1.12.jar:6.1.12]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	OrderService cannot be resolved to a type
+
+	at com.food.foodmodule.controller.MenuItemController.<init>(MenuItemController.java:25) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195) ~[spring-beans-6.1.12.jar:6.1.12]
+	... 24 common frames omitted
+
+28-08-2024 10:53:46 restartedMain         INFO f.f.FoodmoduleApplication               logStarting   50 Starting FoodmoduleApplication using Java 17.0.7 with PID 2428 (C:\Users\Admin\FOM-workspace\foodmodule\target\classes started by Admin in C:\Users\Admin\FOM-workspace\foodmodule)
+28-08-2024 10:53:46 restartedMain         INFO f.f.FoodmoduleApplication     logStartupProfileInfo  654 No active profile set, falling back to 1 default profile: "default"
+28-08-2024 10:53:48 restartedMain         INFO toryConfigurationDelegate    registerRepositoriesIn  143 Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+28-08-2024 10:53:48 restartedMain         INFO toryConfigurationDelegate    registerRepositoriesIn  211 Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.
+28-08-2024 10:53:48 restartedMain         INFO o.s.c.c.s.GenericScope           setSerializationId  282 BeanFactory id=7672b11a-8121-3b63-9f73-a6c296db058b
+28-08-2024 10:53:48 restartedMain         WARN $BeanPostProcessorChecker postProcessAfterInitialization  429 Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+28-08-2024 10:53:48 restartedMain         WARN $BeanPostProcessorChecker postProcessAfterInitialization  437 Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+28-08-2024 10:53:49 restartedMain         INFO s.b.w.e.t.TomcatWebServer                initialize  111 Tomcat initialized with port 8081 (http)
+28-08-2024 10:53:49 restartedMain         INFO o.a.c.c.StandardService                         log  173 Starting service [Tomcat]
+28-08-2024 10:53:49 restartedMain         INFO o.a.c.core.StandardEngine                       log  173 Starting Servlet engine: [Apache Tomcat/10.1.28]
+28-08-2024 10:53:49 restartedMain         INFO o.a.c.c.C.[.[.[/app1]                           log  173 Initializing Spring embedded WebApplicationContext
+28-08-2024 10:53:49 restartedMain         INFO bServerApplicationContext prepareWebApplicationContext  296 Root WebApplicationContext: initialization completed in 2821 ms
+28-08-2024 10:53:49 restartedMain         INFO o.h.j.i.util.LogHelper    logPersistenceUnitInformation   31 HHH000204: Processing PersistenceUnitInfo [name: default]
+28-08-2024 10:53:49 restartedMain         INFO .i.RegionFactoryInitiator           initiateService   50 HHH000026: Second-level cache disabled
+28-08-2024 10:53:49 restartedMain         INFO SpringPersistenceUnitInfo            addTransformer   87 No LoadTimeWeaver setup: ignoring JPA class transformer
+28-08-2024 10:53:49 restartedMain         INFO c.z.h.HikariDataSource                getConnection  109 HikariPool-8 - Starting...
+28-08-2024 10:53:50 restartedMain         INFO c.z.h.pool.HikariPool                 checkFailFast  554 HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@264d9835
+28-08-2024 10:53:50 restartedMain         INFO c.z.h.HikariDataSource                getConnection  122 HikariPool-8 - Start completed.
+28-08-2024 10:53:50 restartedMain         INFO .p.i.JtaPlatformInitiator           initiateService   59 HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+28-08-2024 10:53:50 restartedMain         INFO rEntityManagerFactoryBean buildNativeEntityManagerFactory  437 Initialized JPA EntityManagerFactory for persistence unit 'default'
+28-08-2024 10:53:50 restartedMain         WARN ation$JpaWebConfiguration openEntityManagerInViewInterceptor  236 spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+28-08-2024 10:53:51 restartedMain         WARN .OptionalLiveReloadServer               startServer   62 Unable to start LiveReload server
+28-08-2024 10:53:51 restartedMain         INFO OptionalArgsConfiguration restTemplateDiscoveryClientOptionalArgs   80 Eureka HTTP Client uses RestTemplate.
+28-08-2024 10:53:52 restartedMain         WARN alancerCaffeineWarnLogger        afterPropertiesSet   94 Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+28-08-2024 10:53:52 restartedMain         INFO c.n.e.InstanceInfoFactory                    create   67 Setting initial instance status as: STARTING
+28-08-2024 10:53:52 restartedMain         INFO c.n.d.DiscoveryClient                        <init>  329 Initializing Eureka in region us-east-1
+28-08-2024 10:53:52 restartedMain         INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
+28-08-2024 10:53:52 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  954 Disable delta property : false
+28-08-2024 10:53:52 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  955 Single vip registry refresh property : null
+28-08-2024 10:53:52 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  956 Force full registry fetch : false
+28-08-2024 10:53:52 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  957 Application is null : false
+28-08-2024 10:53:52 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  958 Registered Applications size is zero : true
+28-08-2024 10:53:52 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  960 Application version is -1: true
+28-08-2024 10:53:52 restartedMain         INFO c.n.d.DiscoveryClient       getAndStoreFullRegistry 1042 Getting all instance registry info from the eureka server
+28-08-2024 10:53:52 restartedMain         INFO c.n.d.DiscoveryClient       getAndStoreFullRegistry 1051 The response status is 200
+28-08-2024 10:53:52 restartedMain         INFO c.n.d.DiscoveryClient            initScheduledTasks 1266 Starting heartbeat executor: renew interval is: 30
+28-08-2024 10:53:52 restartedMain         INFO .d.InstanceInfoReplicator                    <init>   64 InstanceInfoReplicator onDemand update allowed rate per min is 4
+28-08-2024 10:53:52 restartedMain         INFO c.n.d.DiscoveryClient                        <init>  455 Discovery Client initialized at timestamp 1724822632200 with initial instances count: 3
+28-08-2024 10:53:52 restartedMain         INFO e.s.EurekaServiceRegistry                  register   70 Registering application FOODMODULE with eureka with status UP
+28-08-2024 10:53:52 restartedMain         INFO c.n.d.DiscoveryClient                        notify 1297 Saw local status change event StatusChangeEvent [timestamp=1724822632206, current=UP, previous=STARTING]
+28-08-2024 10:53:52 restartedMain         INFO s.b.w.e.t.TomcatWebServer                     start  243 Tomcat started on port 8081 (http) with context path '/app1'
+28-08-2024 10:53:52 restartedMain         INFO kaAutoServiceRegistration        onApplicationEvent  150 Updating port to 8081
+28-08-2024 10:53:52 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  825 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081: registering service...
+28-08-2024 10:53:52 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  834 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - registration status: 204
+28-08-2024 10:53:52 restartedMain         INFO f.f.FoodmoduleApplication                logStarted   56 Started FoodmoduleApplication in 6.134 seconds (process running for 5916.695)
+28-08-2024 10:53:52 restartedMain         INFO ationDeltaLoggingListener        onApplicationEvent   63 Condition evaluation unchanged
+28-08-2024 10:54:57 http-nio-8081-exec-1  INFO o.a.c.c.C.[.[.[/app1]                           log  173 Initializing Spring DispatcherServlet 'dispatcherServlet'
+28-08-2024 10:54:57 http-nio-8081-exec-1  INFO o.s.w.s.DispatcherServlet           initServletBean  532 Initializing Servlet 'dispatcherServlet'
+28-08-2024 10:54:57 http-nio-8081-exec-1  INFO o.s.w.s.DispatcherServlet           initServletBean  554 Completed initialization in 5 ms
+28-08-2024 10:54:58 http-nio-8081-exec-3  INFO a.AbstractOpenApiResource                getOpenApi  371 Init duration for springdoc-openapi is: 286 ms
+28-08-2024 10:55:37 http-nio-8081-exec-6  INFO .f.f.c.MenuItemController                   addDish   31 Request sent to add dish: MenuItem(dishId=null, dishType=starter, dishName=soup, price=200, dishDesc=string)
+28-08-2024 10:55:37 http-nio-8081-exec-6  INFO .f.f.c.MenuItemController                   addDish   33 Added dish successfully: MenuItem(dishId=11, dishType=starter, dishName=soup, price=200, dishDesc=string)
+28-08-2024 10:57:06 File Watcher          INFO hangeChangedEventListener        onApplicationEvent  211 Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+28-08-2024 10:57:06 Thread-41             INFO e.s.EurekaServiceRegistry                deregister   91 Unregistering application FOODMODULE with eureka with status DOWN
+28-08-2024 10:57:06 Thread-41             INFO c.n.d.DiscoveryClient                        notify 1297 Saw local status change event StatusChangeEvent [timestamp=1724822826617, current=DOWN, previous=UP]
+28-08-2024 10:57:06 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  825 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081: registering service...
+28-08-2024 10:57:07 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  834 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - registration status: 204
+28-08-2024 10:57:07 Thread-41             INFO rEntityManagerFactoryBean                   destroy  650 Closing JPA EntityManagerFactory for persistence unit 'default'
+28-08-2024 10:57:08 Thread-41             INFO c.z.h.HikariDataSource                        close  349 HikariPool-8 - Shutdown initiated...
+28-08-2024 10:57:08 Thread-41             INFO c.z.h.HikariDataSource                        close  351 HikariPool-8 - Shutdown completed.
+28-08-2024 10:57:08 Thread-41             INFO c.n.d.DiscoveryClient                      shutdown  887 Shutting down DiscoveryClient ...
+28-08-2024 10:57:11 Thread-41             INFO c.n.d.DiscoveryClient                    unregister  918 Unregistering ...
+28-08-2024 10:57:11 Thread-41             INFO c.n.d.DiscoveryClient                    unregister  920 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - deregister  status: 200
+28-08-2024 10:57:11 Thread-41             INFO c.n.d.DiscoveryClient                      shutdown  907 Completed shut down of DiscoveryClient
+28-08-2024 10:57:18 restartedMain         INFO f.f.FoodmoduleApplication               logStarting   50 Starting FoodmoduleApplication using Java 17.0.7 with PID 2428 (C:\Users\Admin\FOM-workspace\foodmodule\target\classes started by Admin in C:\Users\Admin\FOM-workspace\foodmodule)
+28-08-2024 10:57:18 restartedMain         INFO f.f.FoodmoduleApplication     logStartupProfileInfo  654 No active profile set, falling back to 1 default profile: "default"
+28-08-2024 10:57:20 restartedMain         INFO toryConfigurationDelegate    registerRepositoriesIn  143 Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+28-08-2024 10:57:20 restartedMain         INFO toryConfigurationDelegate    registerRepositoriesIn  211 Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interface.
+28-08-2024 10:57:21 restartedMain         INFO o.s.c.c.s.GenericScope           setSerializationId  282 BeanFactory id=7672b11a-8121-3b63-9f73-a6c296db058b
+28-08-2024 10:57:21 restartedMain         WARN $BeanPostProcessorChecker postProcessAfterInitialization  429 Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+28-08-2024 10:57:21 restartedMain         WARN $BeanPostProcessorChecker postProcessAfterInitialization  437 Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+28-08-2024 10:57:21 restartedMain         INFO s.b.w.e.t.TomcatWebServer                initialize  111 Tomcat initialized with port 8081 (http)
+28-08-2024 10:57:21 restartedMain         INFO o.a.c.c.StandardService                         log  173 Starting service [Tomcat]
+28-08-2024 10:57:21 restartedMain         INFO o.a.c.core.StandardEngine                       log  173 Starting Servlet engine: [Apache Tomcat/10.1.28]
+28-08-2024 10:57:21 restartedMain         INFO o.a.c.c.C.[.[.[/app1]                           log  173 Initializing Spring embedded WebApplicationContext
+28-08-2024 10:57:21 restartedMain         INFO bServerApplicationContext prepareWebApplicationContext  296 Root WebApplicationContext: initialization completed in 3041 ms
+28-08-2024 10:57:21 restartedMain         INFO o.h.j.i.util.LogHelper    logPersistenceUnitInformation   31 HHH000204: Processing PersistenceUnitInfo [name: default]
+28-08-2024 10:57:21 restartedMain         INFO .i.RegionFactoryInitiator           initiateService   50 HHH000026: Second-level cache disabled
+28-08-2024 10:57:22 restartedMain         INFO SpringPersistenceUnitInfo            addTransformer   87 No LoadTimeWeaver setup: ignoring JPA class transformer
+28-08-2024 10:57:22 restartedMain         INFO c.z.h.HikariDataSource                getConnection  109 HikariPool-9 - Starting...
+28-08-2024 10:57:22 restartedMain         INFO c.z.h.pool.HikariPool                 checkFailFast  554 HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4dc01bda
+28-08-2024 10:57:22 restartedMain         INFO c.z.h.HikariDataSource                getConnection  122 HikariPool-9 - Start completed.
+28-08-2024 10:57:22 restartedMain         INFO .p.i.JtaPlatformInitiator           initiateService   59 HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+28-08-2024 10:57:22 restartedMain         INFO rEntityManagerFactoryBean buildNativeEntityManagerFactory  437 Initialized JPA EntityManagerFactory for persistence unit 'default'
+28-08-2024 10:57:22 restartedMain         WARN ation$JpaWebConfiguration openEntityManagerInViewInterceptor  236 spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+28-08-2024 10:57:23 restartedMain         WARN .OptionalLiveReloadServer               startServer   62 Unable to start LiveReload server
+28-08-2024 10:57:23 restartedMain         INFO OptionalArgsConfiguration restTemplateDiscoveryClientOptionalArgs   80 Eureka HTTP Client uses RestTemplate.
+28-08-2024 10:57:23 restartedMain         WARN alancerCaffeineWarnLogger        afterPropertiesSet   94 Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+28-08-2024 10:57:23 restartedMain         INFO c.n.e.InstanceInfoFactory                    create   67 Setting initial instance status as: STARTING
+28-08-2024 10:57:24 restartedMain         INFO c.n.d.DiscoveryClient                        <init>  329 Initializing Eureka in region us-east-1
+28-08-2024 10:57:24 restartedMain         INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
+28-08-2024 10:57:24 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  954 Disable delta property : false
+28-08-2024 10:57:24 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  955 Single vip registry refresh property : null
+28-08-2024 10:57:24 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  956 Force full registry fetch : false
+28-08-2024 10:57:24 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  957 Application is null : false
+28-08-2024 10:57:24 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  958 Registered Applications size is zero : true
+28-08-2024 10:57:24 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  960 Application version is -1: true
+28-08-2024 10:57:24 restartedMain         INFO c.n.d.DiscoveryClient       getAndStoreFullRegistry 1042 Getting all instance registry info from the eureka server
+28-08-2024 10:57:24 restartedMain         INFO c.n.d.DiscoveryClient       getAndStoreFullRegistry 1051 The response status is 200
+28-08-2024 10:57:24 restartedMain         INFO c.n.d.DiscoveryClient            initScheduledTasks 1266 Starting heartbeat executor: renew interval is: 30
+28-08-2024 10:57:24 restartedMain         INFO .d.InstanceInfoReplicator                    <init>   64 InstanceInfoReplicator onDemand update allowed rate per min is 4
+28-08-2024 10:57:24 restartedMain         INFO c.n.d.DiscoveryClient                        <init>  455 Discovery Client initialized at timestamp 1724822844093 with initial instances count: 3
+28-08-2024 10:57:24 restartedMain         INFO e.s.EurekaServiceRegistry                  register   70 Registering application FOODMODULE with eureka with status UP
+28-08-2024 10:57:24 restartedMain         INFO c.n.d.DiscoveryClient                        notify 1297 Saw local status change event StatusChangeEvent [timestamp=1724822844098, current=UP, previous=STARTING]
+28-08-2024 10:57:24 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  825 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081: registering service...
+28-08-2024 10:57:24 restartedMain         INFO s.b.w.e.t.TomcatWebServer                     start  243 Tomcat started on port 8081 (http) with context path '/app1'
+28-08-2024 10:57:24 restartedMain         INFO kaAutoServiceRegistration        onApplicationEvent  150 Updating port to 8081
+28-08-2024 10:57:24 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  834 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - registration status: 204
+28-08-2024 10:57:24 restartedMain         INFO f.f.FoodmoduleApplication                logStarted   56 Started FoodmoduleApplication in 6.225 seconds (process running for 6128.54)
+28-08-2024 10:57:24 restartedMain         INFO ationDeltaLoggingListener        onApplicationEvent   63 Condition evaluation unchanged
+28-08-2024 10:57:29 http-nio-8081-exec-1  INFO o.a.c.c.C.[.[.[/app1]                           log  173 Initializing Spring DispatcherServlet 'dispatcherServlet'
+28-08-2024 10:57:29 http-nio-8081-exec-1  INFO o.s.w.s.DispatcherServlet           initServletBean  532 Initializing Servlet 'dispatcherServlet'
+28-08-2024 10:57:29 http-nio-8081-exec-1  INFO o.s.w.s.DispatcherServlet           initServletBean  554 Completed initialization in 6 ms
+28-08-2024 10:57:29 http-nio-8081-exec-1  INFO .f.f.c.MenuItemController                   addDish   31 ===================================
+28-08-2024 10:57:29 http-nio-8081-exec-1  INFO .f.f.c.MenuItemController                   addDish   32 Request sent to add dish: MenuItem(dishId=null, dishType=starter, dishName=gobi, price=200, dishDesc=string)
+28-08-2024 10:57:29 http-nio-8081-exec-1  INFO .f.f.c.MenuItemController                   addDish   34 Added dish successfully: MenuItem(dishId=12, dishType=starter, dishName=gobi, price=200, dishDesc=string)
+28-08-2024 11:02:24 ootstrap-executor-%d  INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
+28-08-2024 11:07:15 File Watcher          INFO hangeChangedEventListener        onApplicationEvent  211 Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+28-08-2024 11:07:16 Thread-47             INFO e.s.EurekaServiceRegistry                deregister   91 Unregistering application FOODMODULE with eureka with status DOWN
+28-08-2024 11:07:16 Thread-47             INFO c.n.d.DiscoveryClient                        notify 1297 Saw local status change event StatusChangeEvent [timestamp=1724823436606, current=DOWN, previous=UP]
+28-08-2024 11:07:16 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  825 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081: registering service...
+28-08-2024 11:07:18 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  834 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - registration status: 204
+28-08-2024 11:07:18 Thread-47             INFO rEntityManagerFactoryBean                   destroy  650 Closing JPA EntityManagerFactory for persistence unit 'default'
+28-08-2024 11:07:19 Thread-47             INFO c.z.h.HikariDataSource                        close  349 HikariPool-9 - Shutdown initiated...
+28-08-2024 11:07:19 Thread-47             INFO c.z.h.HikariDataSource                        close  351 HikariPool-9 - Shutdown completed.
+28-08-2024 11:07:19 Thread-47             INFO c.n.d.DiscoveryClient                      shutdown  887 Shutting down DiscoveryClient ...
+28-08-2024 11:07:22 Thread-47             INFO c.n.d.DiscoveryClient                    unregister  918 Unregistering ...
+28-08-2024 11:07:22 Thread-47             INFO c.n.d.DiscoveryClient                    unregister  920 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - deregister  status: 200
+28-08-2024 11:07:22 Thread-47             INFO c.n.d.DiscoveryClient                      shutdown  907 Completed shut down of DiscoveryClient
+28-08-2024 11:07:35 restartedMain         INFO f.f.FoodmoduleApplication               logStarting   50 Starting FoodmoduleApplication using Java 17.0.7 with PID 2428 (C:\Users\Admin\FOM-workspace\foodmodule\target\classes started by Admin in C:\Users\Admin\FOM-workspace\foodmodule)
+28-08-2024 11:07:35 restartedMain         INFO f.f.FoodmoduleApplication     logStartupProfileInfo  654 No active profile set, falling back to 1 default profile: "default"
+28-08-2024 11:07:39 restartedMain         INFO toryConfigurationDelegate    registerRepositoriesIn  143 Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+28-08-2024 11:07:39 restartedMain         INFO toryConfigurationDelegate    registerRepositoriesIn  211 Finished Spring Data repository scanning in 96 ms. Found 1 JPA repository interface.
+28-08-2024 11:07:40 restartedMain         INFO o.s.c.c.s.GenericScope           setSerializationId  282 BeanFactory id=7672b11a-8121-3b63-9f73-a6c296db058b
+28-08-2024 11:07:41 restartedMain         WARN $BeanPostProcessorChecker postProcessAfterInitialization  429 Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+28-08-2024 11:07:41 restartedMain         WARN $BeanPostProcessorChecker postProcessAfterInitialization  437 Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+28-08-2024 11:07:42 restartedMain         INFO s.b.w.e.t.TomcatWebServer                initialize  111 Tomcat initialized with port 8081 (http)
+28-08-2024 11:07:42 restartedMain         INFO o.a.c.c.StandardService                         log  173 Starting service [Tomcat]
+28-08-2024 11:07:42 restartedMain         INFO o.a.c.core.StandardEngine                       log  173 Starting Servlet engine: [Apache Tomcat/10.1.28]
+28-08-2024 11:07:42 restartedMain         INFO o.a.c.c.C.[.[.[/app1]                           log  173 Initializing Spring embedded WebApplicationContext
+28-08-2024 11:07:42 restartedMain         INFO bServerApplicationContext prepareWebApplicationContext  296 Root WebApplicationContext: initialization completed in 7053 ms
+28-08-2024 11:07:42 restartedMain         INFO o.h.j.i.util.LogHelper    logPersistenceUnitInformation   31 HHH000204: Processing PersistenceUnitInfo [name: default]
+28-08-2024 11:07:42 restartedMain         INFO .i.RegionFactoryInitiator           initiateService   50 HHH000026: Second-level cache disabled
+28-08-2024 11:07:43 restartedMain         INFO SpringPersistenceUnitInfo            addTransformer   87 No LoadTimeWeaver setup: ignoring JPA class transformer
+28-08-2024 11:07:43 restartedMain         INFO c.z.h.HikariDataSource                getConnection  109 HikariPool-10 - Starting...
+28-08-2024 11:07:43 restartedMain         INFO c.z.h.pool.HikariPool                 checkFailFast  554 HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ebb1242
+28-08-2024 11:07:43 restartedMain         INFO c.z.h.HikariDataSource                getConnection  122 HikariPool-10 - Start completed.
+28-08-2024 11:07:43 restartedMain         INFO .p.i.JtaPlatformInitiator           initiateService   59 HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+28-08-2024 11:07:44 restartedMain         INFO rEntityManagerFactoryBean buildNativeEntityManagerFactory  437 Initialized JPA EntityManagerFactory for persistence unit 'default'
+28-08-2024 11:07:44 restartedMain         WARN ation$JpaWebConfiguration openEntityManagerInViewInterceptor  236 spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+28-08-2024 11:07:45 restartedMain         WARN .OptionalLiveReloadServer               startServer   62 Unable to start LiveReload server
+28-08-2024 11:07:46 restartedMain         INFO OptionalArgsConfiguration restTemplateDiscoveryClientOptionalArgs   80 Eureka HTTP Client uses RestTemplate.
+28-08-2024 11:07:46 restartedMain         WARN alancerCaffeineWarnLogger        afterPropertiesSet   94 Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+28-08-2024 11:07:46 restartedMain         INFO c.n.e.InstanceInfoFactory                    create   67 Setting initial instance status as: STARTING
+28-08-2024 11:07:46 restartedMain         INFO c.n.d.DiscoveryClient                        <init>  329 Initializing Eureka in region us-east-1
+28-08-2024 11:07:46 restartedMain         INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
+28-08-2024 11:07:46 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  954 Disable delta property : false
+28-08-2024 11:07:46 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  955 Single vip registry refresh property : null
+28-08-2024 11:07:46 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  956 Force full registry fetch : false
+28-08-2024 11:07:46 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  957 Application is null : false
+28-08-2024 11:07:46 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  958 Registered Applications size is zero : true
+28-08-2024 11:07:46 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  960 Application version is -1: true
+28-08-2024 11:07:46 restartedMain         INFO c.n.d.DiscoveryClient       getAndStoreFullRegistry 1042 Getting all instance registry info from the eureka server
+28-08-2024 11:07:46 restartedMain         INFO c.n.d.DiscoveryClient       getAndStoreFullRegistry 1051 The response status is 200
+28-08-2024 11:07:46 restartedMain         INFO c.n.d.DiscoveryClient            initScheduledTasks 1266 Starting heartbeat executor: renew interval is: 30
+28-08-2024 11:07:46 restartedMain         INFO .d.InstanceInfoReplicator                    <init>   64 InstanceInfoReplicator onDemand update allowed rate per min is 4
+28-08-2024 11:07:46 restartedMain         INFO c.n.d.DiscoveryClient                        <init>  455 Discovery Client initialized at timestamp 1724823466535 with initial instances count: 2
+28-08-2024 11:07:46 restartedMain         INFO e.s.EurekaServiceRegistry                  register   70 Registering application FOODMODULE with eureka with status UP
+28-08-2024 11:07:46 restartedMain         INFO c.n.d.DiscoveryClient                        notify 1297 Saw local status change event StatusChangeEvent [timestamp=1724823466567, current=UP, previous=STARTING]
+28-08-2024 11:07:46 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  825 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081: registering service...
+28-08-2024 11:07:46 restartedMain         INFO s.b.w.e.t.TomcatWebServer                     start  243 Tomcat started on port 8081 (http) with context path '/app1'
+28-08-2024 11:07:46 restartedMain         INFO kaAutoServiceRegistration        onApplicationEvent  150 Updating port to 8081
+28-08-2024 11:07:46 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  834 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - registration status: 204
+28-08-2024 11:07:47 restartedMain         INFO f.f.FoodmoduleApplication                logStarted   56 Started FoodmoduleApplication in 12.936 seconds (process running for 6751.777)
+28-08-2024 11:07:47 restartedMain         INFO ationDeltaLoggingListener        onApplicationEvent   63 Condition evaluation unchanged
+28-08-2024 11:10:17 File Watcher          INFO hangeChangedEventListener        onApplicationEvent  211 Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+28-08-2024 11:10:17 Thread-53             INFO e.s.EurekaServiceRegistry                deregister   91 Unregistering application FOODMODULE with eureka with status DOWN
+28-08-2024 11:10:18 Thread-53             INFO c.n.d.DiscoveryClient                        notify 1297 Saw local status change event StatusChangeEvent [timestamp=1724823618120, current=DOWN, previous=UP]
+28-08-2024 11:10:18 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  825 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081: registering service...
+28-08-2024 11:10:19 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  834 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - registration status: 204
+28-08-2024 11:10:20 Thread-53             INFO rEntityManagerFactoryBean                   destroy  650 Closing JPA EntityManagerFactory for persistence unit 'default'
+28-08-2024 11:10:20 Thread-53             INFO c.z.h.HikariDataSource                        close  349 HikariPool-10 - Shutdown initiated...
+28-08-2024 11:10:20 Thread-53             INFO c.z.h.HikariDataSource                        close  351 HikariPool-10 - Shutdown completed.
+28-08-2024 11:10:20 Thread-53             INFO c.n.d.DiscoveryClient                      shutdown  887 Shutting down DiscoveryClient ...
+28-08-2024 11:10:23 Thread-53             INFO c.n.d.DiscoveryClient                    unregister  918 Unregistering ...
+28-08-2024 11:10:23 Thread-53             INFO c.n.d.DiscoveryClient                    unregister  920 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - deregister  status: 200
+28-08-2024 11:10:23 Thread-53             INFO c.n.d.DiscoveryClient                      shutdown  907 Completed shut down of DiscoveryClient
+28-08-2024 11:10:33 restartedMain         INFO f.f.FoodmoduleApplication               logStarting   50 Starting FoodmoduleApplication using Java 17.0.7 with PID 2428 (C:\Users\Admin\FOM-workspace\foodmodule\target\classes started by Admin in C:\Users\Admin\FOM-workspace\foodmodule)
+28-08-2024 11:10:33 restartedMain         INFO f.f.FoodmoduleApplication     logStartupProfileInfo  654 No active profile set, falling back to 1 default profile: "default"
+28-08-2024 11:10:36 restartedMain         INFO toryConfigurationDelegate    registerRepositoriesIn  143 Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+28-08-2024 11:10:36 restartedMain         INFO toryConfigurationDelegate    registerRepositoriesIn  211 Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interface.
+28-08-2024 11:10:36 restartedMain         INFO o.s.c.c.s.GenericScope           setSerializationId  282 BeanFactory id=7672b11a-8121-3b63-9f73-a6c296db058b
+28-08-2024 11:10:36 restartedMain         WARN $BeanPostProcessorChecker postProcessAfterInitialization  429 Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+28-08-2024 11:10:36 restartedMain         WARN $BeanPostProcessorChecker postProcessAfterInitialization  437 Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+28-08-2024 11:10:37 restartedMain         INFO s.b.w.e.t.TomcatWebServer                initialize  111 Tomcat initialized with port 8081 (http)
+28-08-2024 11:10:37 restartedMain         INFO o.a.c.c.StandardService                         log  173 Starting service [Tomcat]
+28-08-2024 11:10:37 restartedMain         INFO o.a.c.core.StandardEngine                       log  173 Starting Servlet engine: [Apache Tomcat/10.1.28]
+28-08-2024 11:10:37 restartedMain         INFO o.a.c.c.C.[.[.[/app1]                           log  173 Initializing Spring embedded WebApplicationContext
+28-08-2024 11:10:37 restartedMain         INFO bServerApplicationContext prepareWebApplicationContext  296 Root WebApplicationContext: initialization completed in 4633 ms
+28-08-2024 11:10:38 restartedMain         INFO o.h.j.i.util.LogHelper    logPersistenceUnitInformation   31 HHH000204: Processing PersistenceUnitInfo [name: default]
+28-08-2024 11:10:38 restartedMain         INFO .i.RegionFactoryInitiator           initiateService   50 HHH000026: Second-level cache disabled
+28-08-2024 11:10:38 restartedMain         INFO SpringPersistenceUnitInfo            addTransformer   87 No LoadTimeWeaver setup: ignoring JPA class transformer
+28-08-2024 11:10:38 restartedMain         INFO c.z.h.HikariDataSource                getConnection  109 HikariPool-11 - Starting...
+28-08-2024 11:10:38 restartedMain         INFO c.z.h.pool.HikariPool                 checkFailFast  554 HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3023869d
+28-08-2024 11:10:38 restartedMain         INFO c.z.h.HikariDataSource                getConnection  122 HikariPool-11 - Start completed.
+28-08-2024 11:10:39 restartedMain         INFO .p.i.JtaPlatformInitiator           initiateService   59 HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+28-08-2024 11:10:39 restartedMain         INFO rEntityManagerFactoryBean buildNativeEntityManagerFactory  437 Initialized JPA EntityManagerFactory for persistence unit 'default'
+28-08-2024 11:10:39 restartedMain         WARN ation$JpaWebConfiguration openEntityManagerInViewInterceptor  236 spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+28-08-2024 11:10:40 restartedMain         WARN .OptionalLiveReloadServer               startServer   62 Unable to start LiveReload server
+28-08-2024 11:10:42 restartedMain         INFO OptionalArgsConfiguration restTemplateDiscoveryClientOptionalArgs   80 Eureka HTTP Client uses RestTemplate.
+28-08-2024 11:10:42 restartedMain         WARN alancerCaffeineWarnLogger        afterPropertiesSet   94 Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+28-08-2024 11:10:42 restartedMain         INFO c.n.e.InstanceInfoFactory                    create   67 Setting initial instance status as: STARTING
+28-08-2024 11:10:42 restartedMain         INFO c.n.d.DiscoveryClient                        <init>  329 Initializing Eureka in region us-east-1
+28-08-2024 11:10:42 restartedMain         INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
+28-08-2024 11:10:42 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  954 Disable delta property : false
+28-08-2024 11:10:42 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  955 Single vip registry refresh property : null
+28-08-2024 11:10:42 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  956 Force full registry fetch : false
+28-08-2024 11:10:42 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  957 Application is null : false
+28-08-2024 11:10:42 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  958 Registered Applications size is zero : true
+28-08-2024 11:10:42 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  960 Application version is -1: true
+28-08-2024 11:10:42 restartedMain         INFO c.n.d.DiscoveryClient       getAndStoreFullRegistry 1042 Getting all instance registry info from the eureka server
+28-08-2024 11:10:42 restartedMain         INFO c.n.d.DiscoveryClient       getAndStoreFullRegistry 1051 The response status is 200
+28-08-2024 11:10:42 restartedMain         INFO c.n.d.DiscoveryClient            initScheduledTasks 1266 Starting heartbeat executor: renew interval is: 30
+28-08-2024 11:10:42 restartedMain         INFO .d.InstanceInfoReplicator                    <init>   64 InstanceInfoReplicator onDemand update allowed rate per min is 4
+28-08-2024 11:10:42 restartedMain         INFO c.n.d.DiscoveryClient                        <init>  455 Discovery Client initialized at timestamp 1724823642712 with initial instances count: 2
+28-08-2024 11:10:42 restartedMain         INFO e.s.EurekaServiceRegistry                  register   70 Registering application FOODMODULE with eureka with status UP
+28-08-2024 11:10:42 restartedMain         INFO c.n.d.DiscoveryClient                        notify 1297 Saw local status change event StatusChangeEvent [timestamp=1724823642718, current=UP, previous=STARTING]
+28-08-2024 11:10:42 restartedMain         INFO s.b.w.e.t.TomcatWebServer                     start  243 Tomcat started on port 8081 (http) with context path '/app1'
+28-08-2024 11:10:42 restartedMain         INFO kaAutoServiceRegistration        onApplicationEvent  150 Updating port to 8081
+28-08-2024 11:10:42 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  825 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081: registering service...
+28-08-2024 11:10:42 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  834 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - registration status: 204
+28-08-2024 11:10:43 restartedMain         INFO f.f.FoodmoduleApplication                logStarted   56 Started FoodmoduleApplication in 11.227 seconds (process running for 6928.122)
+28-08-2024 11:10:43 restartedMain         INFO ationDeltaLoggingListener        onApplicationEvent   63 Condition evaluation unchanged
+28-08-2024 11:12:18 File Watcher          INFO hangeChangedEventListener        onApplicationEvent  211 Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+28-08-2024 11:12:19 Thread-59             INFO e.s.EurekaServiceRegistry                deregister   91 Unregistering application FOODMODULE with eureka with status DOWN
+28-08-2024 11:12:19 Thread-59             INFO c.n.d.DiscoveryClient                        notify 1297 Saw local status change event StatusChangeEvent [timestamp=1724823739267, current=DOWN, previous=UP]
+28-08-2024 11:12:19 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  825 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081: registering service...
+28-08-2024 11:12:20 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  834 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - registration status: 204
+28-08-2024 11:12:22 Thread-59             INFO rEntityManagerFactoryBean                   destroy  650 Closing JPA EntityManagerFactory for persistence unit 'default'
+28-08-2024 11:12:22 Thread-59             INFO c.z.h.HikariDataSource                        close  349 HikariPool-11 - Shutdown initiated...
+28-08-2024 11:12:22 Thread-59             INFO c.z.h.HikariDataSource                        close  351 HikariPool-11 - Shutdown completed.
+28-08-2024 11:12:22 Thread-59             INFO c.n.d.DiscoveryClient                      shutdown  887 Shutting down DiscoveryClient ...
+28-08-2024 11:12:25 Thread-59             INFO c.n.d.DiscoveryClient                    unregister  918 Unregistering ...
+28-08-2024 11:12:25 Thread-59             INFO c.n.d.DiscoveryClient                    unregister  920 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - deregister  status: 200
+28-08-2024 11:12:25 Thread-59             INFO c.n.d.DiscoveryClient                      shutdown  907 Completed shut down of DiscoveryClient
+28-08-2024 11:12:37 restartedMain         INFO f.f.FoodmoduleApplication               logStarting   50 Starting FoodmoduleApplication using Java 17.0.7 with PID 2428 (C:\Users\Admin\FOM-workspace\foodmodule\target\classes started by Admin in C:\Users\Admin\FOM-workspace\foodmodule)
+28-08-2024 11:12:37 restartedMain         INFO f.f.FoodmoduleApplication     logStartupProfileInfo  654 No active profile set, falling back to 1 default profile: "default"
+28-08-2024 11:12:39 restartedMain         INFO toryConfigurationDelegate    registerRepositoriesIn  143 Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+28-08-2024 11:12:39 restartedMain         INFO toryConfigurationDelegate    registerRepositoriesIn  211 Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interface.
+28-08-2024 11:12:40 restartedMain         INFO o.s.c.c.s.GenericScope           setSerializationId  282 BeanFactory id=7672b11a-8121-3b63-9f73-a6c296db058b
+28-08-2024 11:12:40 restartedMain         WARN $BeanPostProcessorChecker postProcessAfterInitialization  429 Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+28-08-2024 11:12:40 restartedMain         WARN $BeanPostProcessorChecker postProcessAfterInitialization  437 Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+28-08-2024 11:12:41 restartedMain         INFO s.b.w.e.t.TomcatWebServer                initialize  111 Tomcat initialized with port 8081 (http)
+28-08-2024 11:12:41 restartedMain         INFO o.a.c.c.StandardService                         log  173 Starting service [Tomcat]
+28-08-2024 11:12:41 restartedMain         INFO o.a.c.core.StandardEngine                       log  173 Starting Servlet engine: [Apache Tomcat/10.1.28]
+28-08-2024 11:12:41 restartedMain         INFO o.a.c.c.C.[.[.[/app1]                           log  173 Initializing Spring embedded WebApplicationContext
+28-08-2024 11:12:41 restartedMain         INFO bServerApplicationContext prepareWebApplicationContext  296 Root WebApplicationContext: initialization completed in 4814 ms
+28-08-2024 11:12:42 restartedMain         INFO o.h.j.i.util.LogHelper    logPersistenceUnitInformation   31 HHH000204: Processing PersistenceUnitInfo [name: default]
+28-08-2024 11:12:42 restartedMain         INFO .i.RegionFactoryInitiator           initiateService   50 HHH000026: Second-level cache disabled
+28-08-2024 11:12:42 restartedMain         INFO SpringPersistenceUnitInfo            addTransformer   87 No LoadTimeWeaver setup: ignoring JPA class transformer
+28-08-2024 11:12:42 restartedMain         INFO c.z.h.HikariDataSource                getConnection  109 HikariPool-12 - Starting...
+28-08-2024 11:12:42 restartedMain         INFO c.z.h.pool.HikariPool                 checkFailFast  554 HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3714958
+28-08-2024 11:12:42 restartedMain         INFO c.z.h.HikariDataSource                getConnection  122 HikariPool-12 - Start completed.
+28-08-2024 11:12:43 restartedMain         INFO .p.i.JtaPlatformInitiator           initiateService   59 HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+28-08-2024 11:12:43 restartedMain         INFO rEntityManagerFactoryBean buildNativeEntityManagerFactory  437 Initialized JPA EntityManagerFactory for persistence unit 'default'
+28-08-2024 11:12:44 restartedMain         WARN ation$JpaWebConfiguration openEntityManagerInViewInterceptor  236 spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+28-08-2024 11:12:46 restartedMain         WARN .OptionalLiveReloadServer               startServer   62 Unable to start LiveReload server
+28-08-2024 11:12:47 restartedMain         INFO OptionalArgsConfiguration restTemplateDiscoveryClientOptionalArgs   80 Eureka HTTP Client uses RestTemplate.
+28-08-2024 11:12:47 restartedMain         WARN alancerCaffeineWarnLogger        afterPropertiesSet   94 Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+28-08-2024 11:12:47 restartedMain         INFO c.n.e.InstanceInfoFactory                    create   67 Setting initial instance status as: STARTING
+28-08-2024 11:12:48 restartedMain         INFO c.n.d.DiscoveryClient                        <init>  329 Initializing Eureka in region us-east-1
+28-08-2024 11:12:48 restartedMain         INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
+28-08-2024 11:12:48 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  954 Disable delta property : false
+28-08-2024 11:12:48 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  955 Single vip registry refresh property : null
+28-08-2024 11:12:48 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  956 Force full registry fetch : false
+28-08-2024 11:12:48 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  957 Application is null : false
+28-08-2024 11:12:48 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  958 Registered Applications size is zero : true
+28-08-2024 11:12:48 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  960 Application version is -1: true
+28-08-2024 11:12:48 restartedMain         INFO c.n.d.DiscoveryClient       getAndStoreFullRegistry 1042 Getting all instance registry info from the eureka server
+28-08-2024 11:12:49 restartedMain         INFO c.n.d.DiscoveryClient       getAndStoreFullRegistry 1051 The response status is 200
+28-08-2024 11:12:49 restartedMain         INFO c.n.d.DiscoveryClient            initScheduledTasks 1266 Starting heartbeat executor: renew interval is: 30
+28-08-2024 11:12:49 restartedMain         INFO .d.InstanceInfoReplicator                    <init>   64 InstanceInfoReplicator onDemand update allowed rate per min is 4
+28-08-2024 11:12:49 restartedMain         INFO c.n.d.DiscoveryClient                        <init>  455 Discovery Client initialized at timestamp 1724823769131 with initial instances count: 2
+28-08-2024 11:12:49 restartedMain         INFO e.s.EurekaServiceRegistry                  register   70 Registering application FOODMODULE with eureka with status UP
+28-08-2024 11:12:49 restartedMain         INFO c.n.d.DiscoveryClient                        notify 1297 Saw local status change event StatusChangeEvent [timestamp=1724823769135, current=UP, previous=STARTING]
+28-08-2024 11:12:49 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  825 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081: registering service...
+28-08-2024 11:12:49 restartedMain         INFO s.b.w.e.t.TomcatWebServer                     start  243 Tomcat started on port 8081 (http) with context path '/app1'
+28-08-2024 11:12:49 restartedMain         INFO kaAutoServiceRegistration        onApplicationEvent  150 Updating port to 8081
+28-08-2024 11:12:49 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  834 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - registration status: 204
+28-08-2024 11:12:49 restartedMain         INFO f.f.FoodmoduleApplication                logStarted   56 Started FoodmoduleApplication in 13.766 seconds (process running for 7054.109)
+28-08-2024 11:12:49 restartedMain         INFO ationDeltaLoggingListener        onApplicationEvent   63 Condition evaluation unchanged
+28-08-2024 11:13:08 File Watcher          INFO hangeChangedEventListener        onApplicationEvent  211 Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+28-08-2024 11:13:08 Thread-65             INFO e.s.EurekaServiceRegistry                deregister   91 Unregistering application FOODMODULE with eureka with status DOWN
+28-08-2024 11:13:08 Thread-65             INFO c.n.d.DiscoveryClient                        notify 1297 Saw local status change event StatusChangeEvent [timestamp=1724823788822, current=DOWN, previous=UP]
+28-08-2024 11:13:08 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  825 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081: registering service...
+28-08-2024 11:13:08 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  834 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - registration status: 204
+28-08-2024 11:13:10 Thread-65             INFO rEntityManagerFactoryBean                   destroy  650 Closing JPA EntityManagerFactory for persistence unit 'default'
+28-08-2024 11:13:10 Thread-65             INFO c.z.h.HikariDataSource                        close  349 HikariPool-12 - Shutdown initiated...
+28-08-2024 11:13:10 Thread-65             INFO c.z.h.HikariDataSource                        close  351 HikariPool-12 - Shutdown completed.
+28-08-2024 11:13:10 Thread-65             INFO c.n.d.DiscoveryClient                      shutdown  887 Shutting down DiscoveryClient ...
+28-08-2024 11:13:13 Thread-65             INFO c.n.d.DiscoveryClient                    unregister  918 Unregistering ...
+28-08-2024 11:13:13 Thread-65             INFO c.n.d.DiscoveryClient                    unregister  920 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - deregister  status: 200
+28-08-2024 11:13:13 Thread-65             INFO c.n.d.DiscoveryClient                      shutdown  907 Completed shut down of DiscoveryClient
+28-08-2024 11:13:23 restartedMain         INFO f.f.FoodmoduleApplication               logStarting   50 Starting FoodmoduleApplication using Java 17.0.7 with PID 2428 (C:\Users\Admin\FOM-workspace\foodmodule\target\classes started by Admin in C:\Users\Admin\FOM-workspace\foodmodule)
+28-08-2024 11:13:23 restartedMain         INFO f.f.FoodmoduleApplication     logStartupProfileInfo  654 No active profile set, falling back to 1 default profile: "default"
+28-08-2024 11:13:24 restartedMain         INFO toryConfigurationDelegate    registerRepositoriesIn  143 Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+28-08-2024 11:13:24 restartedMain         INFO toryConfigurationDelegate    registerRepositoriesIn  211 Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
+28-08-2024 11:13:25 restartedMain         INFO o.s.c.c.s.GenericScope           setSerializationId  282 BeanFactory id=7672b11a-8121-3b63-9f73-a6c296db058b
+28-08-2024 11:13:25 restartedMain         WARN $BeanPostProcessorChecker postProcessAfterInitialization  429 Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+28-08-2024 11:13:25 restartedMain         WARN $BeanPostProcessorChecker postProcessAfterInitialization  437 Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+28-08-2024 11:13:25 restartedMain         INFO s.b.w.e.t.TomcatWebServer                initialize  111 Tomcat initialized with port 8081 (http)
+28-08-2024 11:13:25 restartedMain         INFO o.a.c.c.StandardService                         log  173 Starting service [Tomcat]
+28-08-2024 11:13:25 restartedMain         INFO o.a.c.core.StandardEngine                       log  173 Starting Servlet engine: [Apache Tomcat/10.1.28]
+28-08-2024 11:13:26 restartedMain         INFO o.a.c.c.C.[.[.[/app1]                           log  173 Initializing Spring embedded WebApplicationContext
+28-08-2024 11:13:26 restartedMain         INFO bServerApplicationContext prepareWebApplicationContext  296 Root WebApplicationContext: initialization completed in 2658 ms
+28-08-2024 11:13:26 restartedMain         INFO o.h.j.i.util.LogHelper    logPersistenceUnitInformation   31 HHH000204: Processing PersistenceUnitInfo [name: default]
+28-08-2024 11:13:26 restartedMain         INFO .i.RegionFactoryInitiator           initiateService   50 HHH000026: Second-level cache disabled
+28-08-2024 11:13:26 restartedMain         INFO SpringPersistenceUnitInfo            addTransformer   87 No LoadTimeWeaver setup: ignoring JPA class transformer
+28-08-2024 11:13:26 restartedMain         INFO c.z.h.HikariDataSource                getConnection  109 HikariPool-13 - Starting...
+28-08-2024 11:13:27 restartedMain         INFO c.z.h.pool.HikariPool                 checkFailFast  554 HikariPool-13 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e6fbe91
+28-08-2024 11:13:27 restartedMain         INFO c.z.h.HikariDataSource                getConnection  122 HikariPool-13 - Start completed.
+28-08-2024 11:13:27 restartedMain         INFO .p.i.JtaPlatformInitiator           initiateService   59 HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+28-08-2024 11:13:28 restartedMain         INFO rEntityManagerFactoryBean buildNativeEntityManagerFactory  437 Initialized JPA EntityManagerFactory for persistence unit 'default'
+28-08-2024 11:13:28 restartedMain         WARN ation$JpaWebConfiguration openEntityManagerInViewInterceptor  236 spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+28-08-2024 11:13:29 restartedMain         WARN .OptionalLiveReloadServer               startServer   62 Unable to start LiveReload server
+28-08-2024 11:13:30 restartedMain         INFO OptionalArgsConfiguration restTemplateDiscoveryClientOptionalArgs   80 Eureka HTTP Client uses RestTemplate.
+28-08-2024 11:13:30 restartedMain         WARN alancerCaffeineWarnLogger        afterPropertiesSet   94 Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+28-08-2024 11:13:31 restartedMain         INFO c.n.e.InstanceInfoFactory                    create   67 Setting initial instance status as: STARTING
+28-08-2024 11:13:31 restartedMain         INFO c.n.d.DiscoveryClient                        <init>  329 Initializing Eureka in region us-east-1
+28-08-2024 11:13:31 restartedMain         INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
+28-08-2024 11:13:31 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  954 Disable delta property : false
+28-08-2024 11:13:31 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  955 Single vip registry refresh property : null
+28-08-2024 11:13:31 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  956 Force full registry fetch : false
+28-08-2024 11:13:31 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  957 Application is null : false
+28-08-2024 11:13:31 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  958 Registered Applications size is zero : true
+28-08-2024 11:13:31 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  960 Application version is -1: true
+28-08-2024 11:13:31 restartedMain         INFO c.n.d.DiscoveryClient       getAndStoreFullRegistry 1042 Getting all instance registry info from the eureka server
+28-08-2024 11:13:31 restartedMain         INFO c.n.d.DiscoveryClient       getAndStoreFullRegistry 1051 The response status is 200
+28-08-2024 11:13:31 restartedMain         INFO c.n.d.DiscoveryClient            initScheduledTasks 1266 Starting heartbeat executor: renew interval is: 30
+28-08-2024 11:13:31 restartedMain         INFO .d.InstanceInfoReplicator                    <init>   64 InstanceInfoReplicator onDemand update allowed rate per min is 4
+28-08-2024 11:13:31 restartedMain         INFO c.n.d.DiscoveryClient                        <init>  455 Discovery Client initialized at timestamp 1724823811747 with initial instances count: 3
+28-08-2024 11:13:31 restartedMain         INFO e.s.EurekaServiceRegistry                  register   70 Registering application FOODMODULE with eureka with status UP
+28-08-2024 11:13:31 restartedMain         INFO c.n.d.DiscoveryClient                        notify 1297 Saw local status change event StatusChangeEvent [timestamp=1724823811751, current=UP, previous=STARTING]
+28-08-2024 11:13:31 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  825 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081: registering service...
+28-08-2024 11:13:31 restartedMain         INFO s.b.w.e.t.TomcatWebServer                     start  243 Tomcat started on port 8081 (http) with context path '/app1'
+28-08-2024 11:13:31 restartedMain         INFO kaAutoServiceRegistration        onApplicationEvent  150 Updating port to 8081
+28-08-2024 11:13:32 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  834 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - registration status: 204
+28-08-2024 11:13:32 restartedMain         INFO f.f.FoodmoduleApplication                logStarted   56 Started FoodmoduleApplication in 9.353 seconds (process running for 7096.717)
+28-08-2024 11:13:32 restartedMain         INFO ationDeltaLoggingListener        onApplicationEvent   63 Condition evaluation unchanged
+28-08-2024 11:13:54 File Watcher          INFO hangeChangedEventListener        onApplicationEvent  211 Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+28-08-2024 11:13:54 Thread-71             INFO e.s.EurekaServiceRegistry                deregister   91 Unregistering application FOODMODULE with eureka with status DOWN
+28-08-2024 11:13:54 Thread-71             INFO c.n.d.DiscoveryClient                        notify 1297 Saw local status change event StatusChangeEvent [timestamp=1724823834999, current=DOWN, previous=UP]
+28-08-2024 11:13:55 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  825 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081: registering service...
+28-08-2024 11:13:55 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  834 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - registration status: 204
+28-08-2024 11:13:56 Thread-71             INFO rEntityManagerFactoryBean                   destroy  650 Closing JPA EntityManagerFactory for persistence unit 'default'
+28-08-2024 11:13:56 Thread-71             INFO c.z.h.HikariDataSource                        close  349 HikariPool-13 - Shutdown initiated...
+28-08-2024 11:13:56 Thread-71             INFO c.z.h.HikariDataSource                        close  351 HikariPool-13 - Shutdown completed.
+28-08-2024 11:13:56 Thread-71             INFO c.n.d.DiscoveryClient                      shutdown  887 Shutting down DiscoveryClient ...
+28-08-2024 11:13:59 Thread-71             INFO c.n.d.DiscoveryClient                    unregister  918 Unregistering ...
+28-08-2024 11:13:59 Thread-71             INFO c.n.d.DiscoveryClient                    unregister  920 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - deregister  status: 200
+28-08-2024 11:13:59 Thread-71             INFO c.n.d.DiscoveryClient                      shutdown  907 Completed shut down of DiscoveryClient
+28-08-2024 11:14:00 restartedMain         INFO f.f.FoodmoduleApplication               logStarting   50 Starting FoodmoduleApplication using Java 17.0.7 with PID 2428 (C:\Users\Admin\FOM-workspace\foodmodule\target\classes started by Admin in C:\Users\Admin\FOM-workspace\foodmodule)
+28-08-2024 11:14:00 restartedMain         INFO f.f.FoodmoduleApplication     logStartupProfileInfo  654 No active profile set, falling back to 1 default profile: "default"
+28-08-2024 11:14:01 restartedMain         INFO toryConfigurationDelegate    registerRepositoriesIn  143 Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+28-08-2024 11:14:01 restartedMain         INFO toryConfigurationDelegate    registerRepositoriesIn  211 Finished Spring Data repository scanning in 111 ms. Found 1 JPA repository interface.
+28-08-2024 11:14:01 restartedMain         INFO o.s.c.c.s.GenericScope           setSerializationId  282 BeanFactory id=7672b11a-8121-3b63-9f73-a6c296db058b
+28-08-2024 11:14:01 restartedMain         WARN $BeanPostProcessorChecker postProcessAfterInitialization  429 Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+28-08-2024 11:14:01 restartedMain         WARN $BeanPostProcessorChecker postProcessAfterInitialization  437 Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+28-08-2024 11:14:02 restartedMain         INFO s.b.w.e.t.TomcatWebServer                initialize  111 Tomcat initialized with port 8081 (http)
+28-08-2024 11:14:02 restartedMain         INFO o.a.c.c.StandardService                         log  173 Starting service [Tomcat]
+28-08-2024 11:14:02 restartedMain         INFO o.a.c.core.StandardEngine                       log  173 Starting Servlet engine: [Apache Tomcat/10.1.28]
+28-08-2024 11:14:02 restartedMain         INFO o.a.c.c.C.[.[.[/app1]                           log  173 Initializing Spring embedded WebApplicationContext
+28-08-2024 11:14:02 restartedMain         INFO bServerApplicationContext prepareWebApplicationContext  296 Root WebApplicationContext: initialization completed in 2169 ms
+28-08-2024 11:14:02 restartedMain         INFO o.h.j.i.util.LogHelper    logPersistenceUnitInformation   31 HHH000204: Processing PersistenceUnitInfo [name: default]
+28-08-2024 11:14:02 restartedMain         INFO .i.RegionFactoryInitiator           initiateService   50 HHH000026: Second-level cache disabled
+28-08-2024 11:14:02 restartedMain         INFO SpringPersistenceUnitInfo            addTransformer   87 No LoadTimeWeaver setup: ignoring JPA class transformer
+28-08-2024 11:14:02 restartedMain         INFO c.z.h.HikariDataSource                getConnection  109 HikariPool-14 - Starting...
+28-08-2024 11:14:03 restartedMain         INFO c.z.h.pool.HikariPool                 checkFailFast  554 HikariPool-14 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c3e08e5
+28-08-2024 11:14:03 restartedMain         INFO c.z.h.HikariDataSource                getConnection  122 HikariPool-14 - Start completed.
+28-08-2024 11:14:03 restartedMain         INFO .p.i.JtaPlatformInitiator           initiateService   59 HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+28-08-2024 11:14:03 restartedMain         INFO rEntityManagerFactoryBean buildNativeEntityManagerFactory  437 Initialized JPA EntityManagerFactory for persistence unit 'default'
+28-08-2024 11:14:03 restartedMain         WARN ation$JpaWebConfiguration openEntityManagerInViewInterceptor  236 spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+28-08-2024 11:14:04 restartedMain         WARN .OptionalLiveReloadServer               startServer   62 Unable to start LiveReload server
+28-08-2024 11:14:05 restartedMain         INFO OptionalArgsConfiguration restTemplateDiscoveryClientOptionalArgs   80 Eureka HTTP Client uses RestTemplate.
+28-08-2024 11:14:05 restartedMain         WARN alancerCaffeineWarnLogger        afterPropertiesSet   94 Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+28-08-2024 11:14:05 restartedMain         INFO c.n.e.InstanceInfoFactory                    create   67 Setting initial instance status as: STARTING
+28-08-2024 11:14:05 restartedMain         INFO c.n.d.DiscoveryClient                        <init>  329 Initializing Eureka in region us-east-1
+28-08-2024 11:14:05 restartedMain         INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
+28-08-2024 11:14:05 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  954 Disable delta property : false
+28-08-2024 11:14:05 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  955 Single vip registry refresh property : null
+28-08-2024 11:14:05 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  956 Force full registry fetch : false
+28-08-2024 11:14:05 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  957 Application is null : false
+28-08-2024 11:14:05 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  958 Registered Applications size is zero : true
+28-08-2024 11:14:05 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  960 Application version is -1: true
+28-08-2024 11:14:05 restartedMain         INFO c.n.d.DiscoveryClient       getAndStoreFullRegistry 1042 Getting all instance registry info from the eureka server
+28-08-2024 11:14:05 restartedMain         INFO c.n.d.DiscoveryClient       getAndStoreFullRegistry 1051 The response status is 200
+28-08-2024 11:14:05 restartedMain         INFO c.n.d.DiscoveryClient            initScheduledTasks 1266 Starting heartbeat executor: renew interval is: 30
+28-08-2024 11:14:05 restartedMain         INFO .d.InstanceInfoReplicator                    <init>   64 InstanceInfoReplicator onDemand update allowed rate per min is 4
+28-08-2024 11:14:05 restartedMain         INFO c.n.d.DiscoveryClient                        <init>  455 Discovery Client initialized at timestamp 1724823845489 with initial instances count: 2
+28-08-2024 11:14:05 restartedMain         INFO e.s.EurekaServiceRegistry                  register   70 Registering application FOODMODULE with eureka with status UP
+28-08-2024 11:14:05 restartedMain         INFO c.n.d.DiscoveryClient                        notify 1297 Saw local status change event StatusChangeEvent [timestamp=1724823845492, current=UP, previous=STARTING]
+28-08-2024 11:14:05 restartedMain         INFO s.b.w.e.t.TomcatWebServer                     start  243 Tomcat started on port 8081 (http) with context path '/app1'
+28-08-2024 11:14:05 restartedMain         INFO kaAutoServiceRegistration        onApplicationEvent  150 Updating port to 8081
+28-08-2024 11:14:05 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  825 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081: registering service...
+28-08-2024 11:14:05 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  834 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - registration status: 204
+28-08-2024 11:14:06 restartedMain         INFO f.f.FoodmoduleApplication                logStarted   56 Started FoodmoduleApplication in 6.637 seconds (process running for 7130.705)
+28-08-2024 11:14:06 restartedMain         INFO ationDeltaLoggingListener        onApplicationEvent   63 Condition evaluation unchanged
+28-08-2024 11:16:55 File Watcher          INFO hangeChangedEventListener        onApplicationEvent  211 Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+28-08-2024 11:16:55 Thread-77             INFO e.s.EurekaServiceRegistry                deregister   91 Unregistering application FOODMODULE with eureka with status DOWN
+28-08-2024 11:16:55 Thread-77             INFO c.n.d.DiscoveryClient                        notify 1297 Saw local status change event StatusChangeEvent [timestamp=1724824015651, current=DOWN, previous=UP]
+28-08-2024 11:16:55 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  825 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081: registering service...
+28-08-2024 11:16:56 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  834 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - registration status: 204
+28-08-2024 11:16:58 Thread-77             INFO rEntityManagerFactoryBean                   destroy  650 Closing JPA EntityManagerFactory for persistence unit 'default'
+28-08-2024 11:16:59 Thread-77             INFO c.z.h.HikariDataSource                        close  349 HikariPool-14 - Shutdown initiated...
+28-08-2024 11:16:59 Thread-77             INFO c.z.h.HikariDataSource                        close  351 HikariPool-14 - Shutdown completed.
+28-08-2024 11:16:59 Thread-77             INFO c.n.d.DiscoveryClient                      shutdown  887 Shutting down DiscoveryClient ...
+28-08-2024 11:17:02 Thread-77             INFO c.n.d.DiscoveryClient                    unregister  918 Unregistering ...
+28-08-2024 11:17:02 Thread-77             INFO c.n.d.DiscoveryClient                    unregister  920 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - deregister  status: 200
+28-08-2024 11:17:02 Thread-77             INFO c.n.d.DiscoveryClient                      shutdown  907 Completed shut down of DiscoveryClient
+28-08-2024 11:17:13 restartedMain         INFO f.f.FoodmoduleApplication               logStarting   50 Starting FoodmoduleApplication using Java 17.0.7 with PID 2428 (C:\Users\Admin\FOM-workspace\foodmodule\target\classes started by Admin in C:\Users\Admin\FOM-workspace\foodmodule)
+28-08-2024 11:17:13 restartedMain         INFO f.f.FoodmoduleApplication     logStartupProfileInfo  654 No active profile set, falling back to 1 default profile: "default"
+28-08-2024 11:17:14 restartedMain         INFO toryConfigurationDelegate    registerRepositoriesIn  143 Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+28-08-2024 11:17:14 restartedMain         INFO toryConfigurationDelegate    registerRepositoriesIn  211 Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interface.
+28-08-2024 11:17:14 restartedMain         INFO o.s.c.c.s.GenericScope           setSerializationId  282 BeanFactory id=7672b11a-8121-3b63-9f73-a6c296db058b
+28-08-2024 11:17:14 restartedMain         WARN $BeanPostProcessorChecker postProcessAfterInitialization  429 Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+28-08-2024 11:17:14 restartedMain         WARN $BeanPostProcessorChecker postProcessAfterInitialization  437 Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+28-08-2024 11:17:15 restartedMain         INFO s.b.w.e.t.TomcatWebServer                initialize  111 Tomcat initialized with port 8081 (http)
+28-08-2024 11:17:15 restartedMain         INFO o.a.c.c.StandardService                         log  173 Starting service [Tomcat]
+28-08-2024 11:17:15 restartedMain         INFO o.a.c.core.StandardEngine                       log  173 Starting Servlet engine: [Apache Tomcat/10.1.28]
+28-08-2024 11:17:15 restartedMain         INFO o.a.c.c.C.[.[.[/app1]                           log  173 Initializing Spring embedded WebApplicationContext
+28-08-2024 11:17:15 restartedMain         INFO bServerApplicationContext prepareWebApplicationContext  296 Root WebApplicationContext: initialization completed in 1997 ms
+28-08-2024 11:17:15 restartedMain         INFO o.h.j.i.util.LogHelper    logPersistenceUnitInformation   31 HHH000204: Processing PersistenceUnitInfo [name: default]
+28-08-2024 11:17:15 restartedMain         INFO .i.RegionFactoryInitiator           initiateService   50 HHH000026: Second-level cache disabled
+28-08-2024 11:17:15 restartedMain         INFO SpringPersistenceUnitInfo            addTransformer   87 No LoadTimeWeaver setup: ignoring JPA class transformer
+28-08-2024 11:17:15 restartedMain         INFO c.z.h.HikariDataSource                getConnection  109 HikariPool-15 - Starting...
+28-08-2024 11:17:15 restartedMain         INFO c.z.h.pool.HikariPool                 checkFailFast  554 HikariPool-15 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ee04de3
+28-08-2024 11:17:15 restartedMain         INFO c.z.h.HikariDataSource                getConnection  122 HikariPool-15 - Start completed.
+28-08-2024 11:17:16 restartedMain         INFO .p.i.JtaPlatformInitiator           initiateService   59 HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+28-08-2024 11:17:16 restartedMain         INFO rEntityManagerFactoryBean buildNativeEntityManagerFactory  437 Initialized JPA EntityManagerFactory for persistence unit 'default'
+28-08-2024 11:17:17 restartedMain         WARN ation$JpaWebConfiguration openEntityManagerInViewInterceptor  236 spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+28-08-2024 11:17:17 restartedMain         WARN .OptionalLiveReloadServer               startServer   62 Unable to start LiveReload server
+28-08-2024 11:17:18 restartedMain         INFO OptionalArgsConfiguration restTemplateDiscoveryClientOptionalArgs   80 Eureka HTTP Client uses RestTemplate.
+28-08-2024 11:17:18 restartedMain         WARN alancerCaffeineWarnLogger        afterPropertiesSet   94 Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+28-08-2024 11:17:18 restartedMain         INFO c.n.e.InstanceInfoFactory                    create   67 Setting initial instance status as: STARTING
+28-08-2024 11:17:18 restartedMain         INFO c.n.d.DiscoveryClient                        <init>  329 Initializing Eureka in region us-east-1
+28-08-2024 11:17:18 restartedMain         INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
+28-08-2024 11:17:18 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  954 Disable delta property : false
+28-08-2024 11:17:18 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  955 Single vip registry refresh property : null
+28-08-2024 11:17:18 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  956 Force full registry fetch : false
+28-08-2024 11:17:18 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  957 Application is null : false
+28-08-2024 11:17:18 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  958 Registered Applications size is zero : true
+28-08-2024 11:17:18 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  960 Application version is -1: true
+28-08-2024 11:17:18 restartedMain         INFO c.n.d.DiscoveryClient       getAndStoreFullRegistry 1042 Getting all instance registry info from the eureka server
+28-08-2024 11:17:18 restartedMain         INFO c.n.d.DiscoveryClient       getAndStoreFullRegistry 1051 The response status is 200
+28-08-2024 11:17:18 restartedMain         INFO c.n.d.DiscoveryClient            initScheduledTasks 1266 Starting heartbeat executor: renew interval is: 30
+28-08-2024 11:17:18 restartedMain         INFO .d.InstanceInfoReplicator                    <init>   64 InstanceInfoReplicator onDemand update allowed rate per min is 4
+28-08-2024 11:17:18 restartedMain         INFO c.n.d.DiscoveryClient                        <init>  455 Discovery Client initialized at timestamp 1724824038425 with initial instances count: 3
+28-08-2024 11:17:18 restartedMain         INFO e.s.EurekaServiceRegistry                  register   70 Registering application FOODMODULE with eureka with status UP
+28-08-2024 11:17:18 restartedMain         INFO c.n.d.DiscoveryClient                        notify 1297 Saw local status change event StatusChangeEvent [timestamp=1724824038427, current=UP, previous=STARTING]
+28-08-2024 11:17:18 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  825 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081: registering service...
+28-08-2024 11:17:18 restartedMain         INFO s.b.w.e.t.TomcatWebServer                     start  243 Tomcat started on port 8081 (http) with context path '/app1'
+28-08-2024 11:17:18 restartedMain         INFO kaAutoServiceRegistration        onApplicationEvent  150 Updating port to 8081
+28-08-2024 11:17:18 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  834 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - registration status: 204
+28-08-2024 11:17:18 restartedMain         INFO f.f.FoodmoduleApplication                logStarted   56 Started FoodmoduleApplication in 5.874 seconds (process running for 7322.982)
+28-08-2024 11:17:18 restartedMain         INFO ationDeltaLoggingListener        onApplicationEvent   63 Condition evaluation unchanged
+28-08-2024 11:17:18 File Watcher          INFO hangeChangedEventListener        onApplicationEvent  211 Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+28-08-2024 11:17:18 Thread-83             INFO e.s.EurekaServiceRegistry                deregister   91 Unregistering application FOODMODULE with eureka with status DOWN
+28-08-2024 11:17:18 Thread-83             INFO c.n.d.DiscoveryClient                        notify 1297 Saw local status change event StatusChangeEvent [timestamp=1724824038928, current=DOWN, previous=UP]
+28-08-2024 11:17:18 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  825 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081: registering service...
+28-08-2024 11:17:18 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  834 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - registration status: 204
+28-08-2024 11:17:19 Thread-83             INFO rEntityManagerFactoryBean                   destroy  650 Closing JPA EntityManagerFactory for persistence unit 'default'
+28-08-2024 11:17:19 Thread-83             INFO c.z.h.HikariDataSource                        close  349 HikariPool-15 - Shutdown initiated...
+28-08-2024 11:17:19 Thread-83             INFO c.z.h.HikariDataSource                        close  351 HikariPool-15 - Shutdown completed.
+28-08-2024 11:17:19 Thread-83             INFO c.n.d.DiscoveryClient                      shutdown  887 Shutting down DiscoveryClient ...
+28-08-2024 11:17:22 Thread-83             INFO c.n.d.DiscoveryClient                    unregister  918 Unregistering ...
+28-08-2024 11:17:22 Thread-83             INFO c.n.d.DiscoveryClient                    unregister  920 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - deregister  status: 200
+28-08-2024 11:17:22 Thread-83             INFO c.n.d.DiscoveryClient                      shutdown  907 Completed shut down of DiscoveryClient
+28-08-2024 11:17:23 restartedMain         INFO f.f.FoodmoduleApplication               logStarting   50 Starting FoodmoduleApplication using Java 17.0.7 with PID 2428 (C:\Users\Admin\FOM-workspace\foodmodule\target\classes started by Admin in C:\Users\Admin\FOM-workspace\foodmodule)
+28-08-2024 11:17:23 restartedMain         INFO f.f.FoodmoduleApplication     logStartupProfileInfo  654 No active profile set, falling back to 1 default profile: "default"
+28-08-2024 11:17:23 restartedMain         INFO toryConfigurationDelegate    registerRepositoriesIn  143 Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+28-08-2024 11:17:23 restartedMain         INFO toryConfigurationDelegate    registerRepositoriesIn  211 Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+28-08-2024 11:17:24 restartedMain         INFO o.s.c.c.s.GenericScope           setSerializationId  282 BeanFactory id=7672b11a-8121-3b63-9f73-a6c296db058b
+28-08-2024 11:17:24 restartedMain         WARN $BeanPostProcessorChecker postProcessAfterInitialization  429 Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+28-08-2024 11:17:24 restartedMain         WARN $BeanPostProcessorChecker postProcessAfterInitialization  437 Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+28-08-2024 11:17:24 restartedMain         INFO s.b.w.e.t.TomcatWebServer                initialize  111 Tomcat initialized with port 8081 (http)
+28-08-2024 11:17:24 restartedMain         INFO o.a.c.c.StandardService                         log  173 Starting service [Tomcat]
+28-08-2024 11:17:24 restartedMain         INFO o.a.c.core.StandardEngine                       log  173 Starting Servlet engine: [Apache Tomcat/10.1.28]
+28-08-2024 11:17:24 restartedMain         INFO o.a.c.c.C.[.[.[/app1]                           log  173 Initializing Spring embedded WebApplicationContext
+28-08-2024 11:17:24 restartedMain         INFO bServerApplicationContext prepareWebApplicationContext  296 Root WebApplicationContext: initialization completed in 1776 ms
+28-08-2024 11:17:25 restartedMain         INFO o.h.j.i.util.LogHelper    logPersistenceUnitInformation   31 HHH000204: Processing PersistenceUnitInfo [name: default]
+28-08-2024 11:17:25 restartedMain         INFO .i.RegionFactoryInitiator           initiateService   50 HHH000026: Second-level cache disabled
+28-08-2024 11:17:25 restartedMain         INFO SpringPersistenceUnitInfo            addTransformer   87 No LoadTimeWeaver setup: ignoring JPA class transformer
+28-08-2024 11:17:25 restartedMain         INFO c.z.h.HikariDataSource                getConnection  109 HikariPool-16 - Starting...
+28-08-2024 11:17:25 restartedMain         INFO c.z.h.pool.HikariPool                 checkFailFast  554 HikariPool-16 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e25d47d
+28-08-2024 11:17:25 restartedMain         INFO c.z.h.HikariDataSource                getConnection  122 HikariPool-16 - Start completed.
+28-08-2024 11:17:25 restartedMain         INFO .p.i.JtaPlatformInitiator           initiateService   59 HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+28-08-2024 11:17:25 restartedMain         INFO rEntityManagerFactoryBean buildNativeEntityManagerFactory  437 Initialized JPA EntityManagerFactory for persistence unit 'default'
+28-08-2024 11:17:25 restartedMain         WARN ation$JpaWebConfiguration openEntityManagerInViewInterceptor  236 spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+28-08-2024 11:17:25 restartedMain         WARN .OptionalLiveReloadServer               startServer   62 Unable to start LiveReload server
+28-08-2024 11:17:26 restartedMain         INFO OptionalArgsConfiguration restTemplateDiscoveryClientOptionalArgs   80 Eureka HTTP Client uses RestTemplate.
+28-08-2024 11:17:26 restartedMain         WARN alancerCaffeineWarnLogger        afterPropertiesSet   94 Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+28-08-2024 11:17:26 restartedMain         INFO c.n.e.InstanceInfoFactory                    create   67 Setting initial instance status as: STARTING
+28-08-2024 11:17:26 restartedMain         INFO c.n.d.DiscoveryClient                        <init>  329 Initializing Eureka in region us-east-1
+28-08-2024 11:17:26 restartedMain         INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
+28-08-2024 11:17:26 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  954 Disable delta property : false
+28-08-2024 11:17:26 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  955 Single vip registry refresh property : null
+28-08-2024 11:17:26 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  956 Force full registry fetch : false
+28-08-2024 11:17:26 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  957 Application is null : false
+28-08-2024 11:17:26 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  958 Registered Applications size is zero : true
+28-08-2024 11:17:26 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  960 Application version is -1: true
+28-08-2024 11:17:26 restartedMain         INFO c.n.d.DiscoveryClient       getAndStoreFullRegistry 1042 Getting all instance registry info from the eureka server
+28-08-2024 11:17:26 restartedMain         INFO c.n.d.DiscoveryClient       getAndStoreFullRegistry 1051 The response status is 200
+28-08-2024 11:17:26 restartedMain         INFO c.n.d.DiscoveryClient            initScheduledTasks 1266 Starting heartbeat executor: renew interval is: 30
+28-08-2024 11:17:26 restartedMain         INFO .d.InstanceInfoReplicator                    <init>   64 InstanceInfoReplicator onDemand update allowed rate per min is 4
+28-08-2024 11:17:26 restartedMain         INFO c.n.d.DiscoveryClient                        <init>  455 Discovery Client initialized at timestamp 1724824046448 with initial instances count: 3
+28-08-2024 11:17:26 restartedMain         INFO e.s.EurekaServiceRegistry                  register   70 Registering application FOODMODULE with eureka with status UP
+28-08-2024 11:17:26 restartedMain         INFO c.n.d.DiscoveryClient                        notify 1297 Saw local status change event StatusChangeEvent [timestamp=1724824046450, current=UP, previous=STARTING]
+28-08-2024 11:17:26 restartedMain         INFO s.b.w.e.t.TomcatWebServer                     start  243 Tomcat started on port 8081 (http) with context path '/app1'
+28-08-2024 11:17:26 restartedMain         INFO kaAutoServiceRegistration        onApplicationEvent  150 Updating port to 8081
+28-08-2024 11:17:26 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  825 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081: registering service...
+28-08-2024 11:17:26 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  834 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - registration status: 204
+28-08-2024 11:17:26 restartedMain         INFO f.f.FoodmoduleApplication                logStarted   56 Started FoodmoduleApplication in 4.092 seconds (process running for 7331.094)
+28-08-2024 11:17:26 restartedMain         INFO ationDeltaLoggingListener        onApplicationEvent   63 Condition evaluation unchanged
+28-08-2024 11:18:17 File Watcher          INFO hangeChangedEventListener        onApplicationEvent  211 Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+28-08-2024 11:18:17 Thread-89             INFO e.s.EurekaServiceRegistry                deregister   91 Unregistering application FOODMODULE with eureka with status DOWN
+28-08-2024 11:18:17 Thread-89             INFO c.n.d.DiscoveryClient                        notify 1297 Saw local status change event StatusChangeEvent [timestamp=1724824097922, current=DOWN, previous=UP]
+28-08-2024 11:18:17 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  825 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081: registering service...
+28-08-2024 11:18:17 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  834 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - registration status: 204
+28-08-2024 11:18:18 Thread-89             INFO rEntityManagerFactoryBean                   destroy  650 Closing JPA EntityManagerFactory for persistence unit 'default'
+28-08-2024 11:18:18 Thread-89             INFO c.z.h.HikariDataSource                        close  349 HikariPool-16 - Shutdown initiated...
+28-08-2024 11:18:18 Thread-89             INFO c.z.h.HikariDataSource                        close  351 HikariPool-16 - Shutdown completed.
+28-08-2024 11:18:18 Thread-89             INFO c.n.d.DiscoveryClient                      shutdown  887 Shutting down DiscoveryClient ...
+28-08-2024 11:18:21 Thread-89             INFO c.n.d.DiscoveryClient                    unregister  918 Unregistering ...
+28-08-2024 11:18:21 Thread-89             INFO c.n.d.DiscoveryClient                    unregister  920 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - deregister  status: 200
+28-08-2024 11:18:21 Thread-89             INFO c.n.d.DiscoveryClient                      shutdown  907 Completed shut down of DiscoveryClient
+28-08-2024 11:18:22 restartedMain         INFO f.f.FoodmoduleApplication               logStarting   50 Starting FoodmoduleApplication using Java 17.0.7 with PID 2428 (C:\Users\Admin\FOM-workspace\foodmodule\target\classes started by Admin in C:\Users\Admin\FOM-workspace\foodmodule)
+28-08-2024 11:18:22 restartedMain         INFO f.f.FoodmoduleApplication     logStartupProfileInfo  654 No active profile set, falling back to 1 default profile: "default"
+28-08-2024 11:18:23 restartedMain         INFO toryConfigurationDelegate    registerRepositoriesIn  143 Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+28-08-2024 11:18:23 restartedMain         INFO toryConfigurationDelegate    registerRepositoriesIn  211 Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interface.
+28-08-2024 11:18:24 restartedMain         INFO o.s.c.c.s.GenericScope           setSerializationId  282 BeanFactory id=7672b11a-8121-3b63-9f73-a6c296db058b
+28-08-2024 11:18:24 restartedMain         WARN $BeanPostProcessorChecker postProcessAfterInitialization  429 Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+28-08-2024 11:18:24 restartedMain         WARN $BeanPostProcessorChecker postProcessAfterInitialization  437 Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+28-08-2024 11:18:24 restartedMain         INFO s.b.w.e.t.TomcatWebServer                initialize  111 Tomcat initialized with port 8081 (http)
+28-08-2024 11:18:24 restartedMain         INFO o.a.c.c.StandardService                         log  173 Starting service [Tomcat]
+28-08-2024 11:18:24 restartedMain         INFO o.a.c.core.StandardEngine                       log  173 Starting Servlet engine: [Apache Tomcat/10.1.28]
+28-08-2024 11:18:24 restartedMain         INFO o.a.c.c.C.[.[.[/app1]                           log  173 Initializing Spring embedded WebApplicationContext
+28-08-2024 11:18:24 restartedMain         INFO bServerApplicationContext prepareWebApplicationContext  296 Root WebApplicationContext: initialization completed in 2070 ms
+28-08-2024 11:18:25 restartedMain         INFO o.h.j.i.util.LogHelper    logPersistenceUnitInformation   31 HHH000204: Processing PersistenceUnitInfo [name: default]
+28-08-2024 11:18:25 restartedMain         INFO .i.RegionFactoryInitiator           initiateService   50 HHH000026: Second-level cache disabled
+28-08-2024 11:18:25 restartedMain         INFO SpringPersistenceUnitInfo            addTransformer   87 No LoadTimeWeaver setup: ignoring JPA class transformer
+28-08-2024 11:18:25 restartedMain         INFO c.z.h.HikariDataSource                getConnection  109 HikariPool-17 - Starting...
+28-08-2024 11:18:25 restartedMain         INFO c.z.h.pool.HikariPool                 checkFailFast  554 HikariPool-17 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d7d55dc
+28-08-2024 11:18:25 restartedMain         INFO c.z.h.HikariDataSource                getConnection  122 HikariPool-17 - Start completed.
+28-08-2024 11:18:25 restartedMain         INFO .p.i.JtaPlatformInitiator           initiateService   59 HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+28-08-2024 11:18:25 restartedMain         INFO rEntityManagerFactoryBean buildNativeEntityManagerFactory  437 Initialized JPA EntityManagerFactory for persistence unit 'default'
+28-08-2024 11:18:25 restartedMain         WARN ation$JpaWebConfiguration openEntityManagerInViewInterceptor  236 spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+28-08-2024 11:18:25 restartedMain         WARN .OptionalLiveReloadServer               startServer   62 Unable to start LiveReload server
+28-08-2024 11:18:26 restartedMain         INFO OptionalArgsConfiguration restTemplateDiscoveryClientOptionalArgs   80 Eureka HTTP Client uses RestTemplate.
+28-08-2024 11:18:26 restartedMain         WARN alancerCaffeineWarnLogger        afterPropertiesSet   94 Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+28-08-2024 11:18:26 restartedMain         INFO c.n.e.InstanceInfoFactory                    create   67 Setting initial instance status as: STARTING
+28-08-2024 11:18:26 restartedMain         INFO c.n.d.DiscoveryClient                        <init>  329 Initializing Eureka in region us-east-1
+28-08-2024 11:18:26 restartedMain         INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
+28-08-2024 11:18:26 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  954 Disable delta property : false
+28-08-2024 11:18:26 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  955 Single vip registry refresh property : null
+28-08-2024 11:18:26 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  956 Force full registry fetch : false
+28-08-2024 11:18:26 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  957 Application is null : false
+28-08-2024 11:18:26 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  958 Registered Applications size is zero : true
+28-08-2024 11:18:26 restartedMain         INFO c.n.d.DiscoveryClient                 fetchRegistry  960 Application version is -1: true
+28-08-2024 11:18:26 restartedMain         INFO c.n.d.DiscoveryClient       getAndStoreFullRegistry 1042 Getting all instance registry info from the eureka server
+28-08-2024 11:18:26 restartedMain         INFO c.n.d.DiscoveryClient       getAndStoreFullRegistry 1051 The response status is 200
+28-08-2024 11:18:26 restartedMain         INFO c.n.d.DiscoveryClient            initScheduledTasks 1266 Starting heartbeat executor: renew interval is: 30
+28-08-2024 11:18:26 restartedMain         INFO .d.InstanceInfoReplicator                    <init>   64 InstanceInfoReplicator onDemand update allowed rate per min is 4
+28-08-2024 11:18:26 restartedMain         INFO c.n.d.DiscoveryClient                        <init>  455 Discovery Client initialized at timestamp 1724824106822 with initial instances count: 3
+28-08-2024 11:18:26 restartedMain         INFO e.s.EurekaServiceRegistry                  register   70 Registering application FOODMODULE with eureka with status UP
+28-08-2024 11:18:26 restartedMain         INFO c.n.d.DiscoveryClient                        notify 1297 Saw local status change event StatusChangeEvent [timestamp=1724824106827, current=UP, previous=STARTING]
+28-08-2024 11:18:26 restartedMain         INFO s.b.w.e.t.TomcatWebServer                     start  243 Tomcat started on port 8081 (http) with context path '/app1'
+28-08-2024 11:18:26 restartedMain         INFO kaAutoServiceRegistration        onApplicationEvent  150 Updating port to 8081
+28-08-2024 11:18:26 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  825 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081: registering service...
+28-08-2024 11:18:26 nceInfoReplicator-%d  INFO c.n.d.DiscoveryClient                      register  834 DiscoveryClient_FOODMODULE/DESKTOP-B3GGKC6:foodmodule:8081 - registration status: 204
+28-08-2024 11:18:27 restartedMain         INFO f.f.FoodmoduleApplication                logStarted   56 Started FoodmoduleApplication in 5.272 seconds (process running for 7391.64)
+28-08-2024 11:18:27 restartedMain         INFO ationDeltaLoggingListener        onApplicationEvent   63 Condition evaluation unchanged
+28-08-2024 11:18:52 http-nio-8081-exec-1  INFO o.a.c.c.C.[.[.[/app1]                           log  173 Initializing Spring DispatcherServlet 'dispatcherServlet'
+28-08-2024 11:18:52 http-nio-8081-exec-1  INFO o.s.w.s.DispatcherServlet           initServletBean  532 Initializing Servlet 'dispatcherServlet'
+28-08-2024 11:18:52 http-nio-8081-exec-1  INFO o.s.w.s.DispatcherServlet           initServletBean  554 Completed initialization in 28 ms
+28-08-2024 11:18:54 http-nio-8081-exec-4  INFO a.AbstractOpenApiResource                getOpenApi  371 Init duration for springdoc-openapi is: 295 ms
+28-08-2024 11:19:23 http-nio-8081-exec-7  INFO .f.f.c.MenuItemController               getDishById   41 ===================================
+28-08-2024 11:19:23 http-nio-8081-exec-7  INFO c.f.f.s.MenuItemService                 getMenuById   29 Fetching menu item with ID: 2
+28-08-2024 11:19:23 http-nio-8081-exec-7  INFO c.f.f.s.MenuItemService                 getMenuById   32 Menu item found: MenuItem(dishId=2, dishType=starter, dishName=pannertickka, price=150, dishDesc=little spicy)
+28-08-2024 11:20:18 http-nio-8081-exec-9  INFO .f.f.c.MenuItemController        getMenusBycategory   54 ===================================
+28-08-2024 11:20:18 http-nio-8081-exec-9  INFO c.f.f.s.MenuItemService                    getMenus   42 Fetching menu items for dish type: starter
+28-08-2024 11:20:19 http-nio-8081-exec-9  INFO c.f.f.s.MenuItemService                    getMenus   48 Dishes found for category starter: [MenuItem(dishId=1, dishType=starter, dishName=Gobi, price=90, dishDesc=tasty), MenuItem(dishId=2, dishType=starter, dishName=pannertickka, price=150, dishDesc=little spicy), MenuItem(dishId=3, dishType=starter, dishName=masalapapad, price=100, dishDesc=tasty), MenuItem(dishId=8, dishType=starter, dishName=corn soup, price=150, dishDesc=tasty), MenuItem(dishId=9, dishType=starter, dishName=corn soup, price=150, dishDesc=tasty), MenuItem(dishId=10, dishType=starter, dishName=corn soup, price=200, dishDesc=tasty), MenuItem(dishId=11, dishType=starter, dishName=soup, price=200, dishDesc=string), MenuItem(dishId=12, dishType=starter, dishName=gobi, price=200, dishDesc=string)]
+28-08-2024 11:21:00 http-nio-8081-exec-1  INFO .f.f.c.MenuItemController        getMenusBycategory   54 ===================================
+28-08-2024 11:21:00 http-nio-8081-exec-1  INFO c.f.f.s.MenuItemService                    getMenus   42 Fetching menu items for dish type: mains
+28-08-2024 11:21:00 http-nio-8081-exec-1 ERROR c.f.f.s.MenuItemService                    getMenus   45 No dishes found in category: mains
+28-08-2024 11:21:00 http-nio-8081-exec-1  WARN nHandlerExceptionResolver              logException  247 Resolved [com.food.foodmodule.exception.DishNotFoundException: No dishes found in category mains]
+28-08-2024 11:23:26 ootstrap-executor-%d  INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
+28-08-2024 11:28:27 ootstrap-executor-%d  INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
+28-08-2024 11:33:27 ootstrap-executor-%d  INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
+28-08-2024 11:38:27 ootstrap-executor-%d  INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
+28-08-2024 11:43:27 ootstrap-executor-%d  INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
+28-08-2024 11:48:27 ootstrap-executor-%d  INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
+28-08-2024 11:53:27 ootstrap-executor-%d  INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
+28-08-2024 11:58:27 ootstrap-executor-%d  INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
+28-08-2024 12:03:27 ootstrap-executor-%d  INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
+28-08-2024 12:08:27 ootstrap-executor-%d  INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
+28-08-2024 12:13:27 ootstrap-executor-%d  INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
+28-08-2024 12:18:27 ootstrap-executor-%d  INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
+28-08-2024 12:23:27 ootstrap-executor-%d  INFO r.a.ConfigClusterResolver       getClusterEndpoints   43 Resolving eureka endpoints via configuration
